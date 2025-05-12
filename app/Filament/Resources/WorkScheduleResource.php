@@ -23,9 +23,16 @@ class WorkScheduleResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->label('اسم جدول الدوام')
-                    ->required(),
+                Forms\Components\Select::make('name')
+            ->label('اسم جدول الدوام')
+            ->options([
+                'دوام صباحي' => 'دوام صباحي',
+                'دوام مسائي' => 'دوام مسائي',
+                'دوام جزئي' => 'دوام جزئي',
+            ])
+            ->required()
+            
+
 
                 
             ]);

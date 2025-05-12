@@ -12,7 +12,7 @@ public function schedule()
     return $this->belongsTo(WorkSchedule::class, 'work_schedule_id');
 }
   protected $fillable = [
-        'work_schedule_id', // إذا كانت هذه العمود قابل للتعيين الجماعي
+        'work_schedule_id', 
         'day_of_week',
         'start_time',
         'end_time',
