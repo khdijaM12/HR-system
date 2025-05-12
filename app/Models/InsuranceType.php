@@ -10,5 +10,11 @@ class InsuranceType extends Model
     use SoftDeletes;
 
     protected $fillable = ['name', 'description'];
+
+    public function insuranceType()
+{
+    return $this->belongsTo(InsuranceType::class);
+}
+
 }
 
