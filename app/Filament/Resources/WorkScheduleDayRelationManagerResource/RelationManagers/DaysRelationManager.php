@@ -30,15 +30,15 @@ class WorkScheduleDayRelationManager extends RelationManager
                 ])
                 ->required(),
 
-            Forms\Components\Select::make('work_schedule_type') // إضافة قائمة منسدلة لنوع الدوام
-                ->label('نوع الدوام')
-                ->options([
-                    'morning' => 'دوام صباحي',  // الخيار الأول
-                    'evening' => 'دوام مسائي',  // الخيار الثاني
-                    'part_time' => 'دوام جزئي', // الخيار الثالث
-                ])
-                ->required()
-                ->placeholder('اختر نوع الدوام...'),
+            // Forms\Components\Select::make('work_schedule_type') // إضافة قائمة منسدلة لنوع الدوام
+            //     ->label('نوع الدوام')
+            //     ->options([
+            //         'morning' => 'دوام صباحي',  // الخيار الأول
+            //         'evening' => 'دوام مسائي',  // الخيار الثاني
+            //         'part_time' => 'دوام جزئي', // الخيار الثالث
+            //     ])
+            //     ->required()
+            //     ->placeholder('اختر نوع الدوام...'),
 
             Forms\Components\TimePicker::make('start_time')
                 ->label('وقت البداية')
